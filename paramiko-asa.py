@@ -38,7 +38,6 @@ output = " "
 
 while client.recv_ready():
  output = client.recv(1)
- print (ord(output))
  version_info += output.decode('UTF-8')
 
 print (version_info)
